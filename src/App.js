@@ -1,11 +1,21 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import './App.css';
+import Home from './Pages/Home/Home/Home';
 
 function App() {
   return (
-    <div className="App">
-      ok
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route index element={<Home />} />
+          {/* <Route path="teams" element={<Teams />}>
+          <Route path=":teamId" element={<Team />} />
+          <Route path="new" element={<NewTeamForm />} />
+          <Route index element={<LeagueStandings />} />
+        </Route> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
