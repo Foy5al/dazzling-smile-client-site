@@ -18,7 +18,7 @@ const style = {
 };
 
 const BookingModal = ({ openBooking, handleBookingClose, booking, date }) => {
-    const { name, time, space } = booking;
+    const { name } = booking;
     const handleBookingSubmit = e => {
         alert('submitting');
 
