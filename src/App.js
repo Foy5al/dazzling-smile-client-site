@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
 import './App.css';
+import Appointment from './Pages/Appointment/Appointment/Appointment';
 import Home from './Pages/Home/Home/Home';
 import Services from './Pages/Home/Services/Services';
 
@@ -10,11 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route index element={<Home />} />
         <Route path="services" element={<Services />} />
-        {/*
-          <Route path=":teamId" element={<Team />} />
-          <Route path="new" element={<NewTeamForm />} />
-          <Route index element={<LeagueStandings />} />
-        </Route> */}
+        <Route path="/appointment" element={<Appointment />} />
       </Routes>
     </BrowserRouter>
   );
