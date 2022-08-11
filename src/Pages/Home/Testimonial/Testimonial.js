@@ -39,10 +39,10 @@ const Testimonial = () => {
         <Box sx={{ my: 2 }}>
             <Container>
                 <Box style={clientSaysQuote}>
-                    <Typography variant='h6' component='h6'>
+                    <Typography variant='h6' sx={{ color: '#5CE7ED' }} component='h6'>
                         Testimonial
                     </Typography>
-                    <Typography variant='h5' component='h5'>
+                    <Typography variant='h4' component='h4' sx={{ fontWeight: 600 }}>
                         What Our Patients <br />
                         Says
                     </Typography>
@@ -51,8 +51,8 @@ const Testimonial = () => {
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {
                         reviews.map(review => <Card sx={{
-                            boxShadow: 1, maxWidth: 345, p: 1,
-                            m: 1,
+                            boxShadow: 3, maxWidth: 320, p: 1,
+                            m: 2, borderRadius: 3
                         }}>
                             <CardContent>
                                 <Typography variant="body2" color="text.secondary">
@@ -62,7 +62,7 @@ const Testimonial = () => {
 
                             <CardHeader
                                 avatar={
-                                    <Avatar alt={review.name} src={review.img} />
+                                    <Avatar sx={{ border: '3px solid #5CE7ED' }} alt={review.name} src={review.img} />
                                 }
 
                                 title={review.name}
@@ -70,10 +70,7 @@ const Testimonial = () => {
                             />
                         </Card>)
                     }
-
                 </Box>
-
-
             </Container>
         </Box>
     );
