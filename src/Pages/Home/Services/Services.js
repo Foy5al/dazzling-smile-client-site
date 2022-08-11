@@ -39,7 +39,7 @@ const Services = () => {
                     SERVICES WE PROVIDE
                 </Typography>
 
-                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 1, sm: 8, md: 12 }}>
                     {services.map((service, index) => (<Service
                         key={service.name}
                         service={service}
