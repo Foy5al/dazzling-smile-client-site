@@ -36,7 +36,7 @@ const reviews = [
 const Testimonial = () => {
 
     return (
-        <Box sx={{ mt: 2 }}>
+        <Box sx={{ my: 2 }}>
             <Container>
                 <Box style={clientSaysQuote}>
                     <Typography variant='h6' component='h6'>
@@ -48,9 +48,12 @@ const Testimonial = () => {
                     </Typography>
                 </Box>
 
-                <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+                <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {
-                        reviews.map(review => <Card sx={{ maxWidth: 345 }}>
+                        reviews.map(review => <Card sx={{
+                            boxShadow: 1, maxWidth: 345, p: 1,
+                            m: 1,
+                        }}>
                             <CardContent>
                                 <Typography variant="body2" color="text.secondary">
                                     {review.text}
