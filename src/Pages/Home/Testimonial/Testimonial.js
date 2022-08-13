@@ -2,6 +2,9 @@ import { Avatar, Card, CardContent, CardHeader, Typography } from '@mui/material
 import { Box, Container } from '@mui/system';
 import React from 'react';
 import quote from '../../../assets/icons/quote.svg'
+import prople1 from '../../../assets/images/people1.png'
+import prople2 from '../../../assets/images/people2.png'
+import prople3 from '../../../assets/images/people3.png'
 
 const clientSaysQuote = {
     background: `url(${quote})`,
@@ -14,21 +17,21 @@ const reviews = [
     {
         id: 1,
         name: "Remy Sharp",
-        img: "https://mui.com/static/images/avatar/1.jpg",
+        img: prople1,
         position: "Web Developer",
         text: "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content"
     },
     {
         id: 2,
         name: "Travis Howard",
-        img: "https://mui.com/static/images/avatar/2.jpg",
+        img: prople2,
         position: "Web Developer",
         text: "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content"
     },
     {
         id: 3,
         name: "Cindy Baker",
-        img: "https://mui.com/static/images/avatar/3.jpg",
+        img: prople3,
         position: "Model",
         text: "It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content"
     }
@@ -50,7 +53,7 @@ const Testimonial = () => {
 
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     {
-                        reviews.map(review => <Card sx={{
+                        reviews.map(review => <Card key={review.id} sx={{
                             boxShadow: 3, maxWidth: 320, p: 1,
                             m: 2, borderRadius: 3
                         }}>

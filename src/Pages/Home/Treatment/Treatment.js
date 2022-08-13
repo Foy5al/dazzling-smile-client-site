@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Container, Grid, Typography } from '@mui/material';
-import treatmentImg from '../../../assets/images/treatment.png'
+import treatmentImg from '../../../assets/images/treatment.png';
 
 const verticalCenter = {
     display: 'flex',
