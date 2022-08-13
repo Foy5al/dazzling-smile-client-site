@@ -1,5 +1,5 @@
-import { Box, Button, Checkbox, Container, FormControlLabel, Grid, TextareaAutosize, TextField, Typography } from '@mui/material';
 import React from 'react';
+import { Box, Button, Checkbox, Container, FormControlLabel, Grid, TextareaAutosize, TextField, Typography } from '@mui/material';
 import contactBg from '../../../assets/images/appointment.png'
 
 
@@ -12,7 +12,7 @@ const ConnectUs = () => {
     return (
         <Box style={appointmentBg} sx={{ flexGrow: 1 }}>
             <Container>
-                <Typography variant='h6' sx={{ textAlign: 'center', color: '#5CE7ED' }}>
+                <Typography variant='h6' sx={{ mt: 2, textAlign: 'center', color: '#5CE7ED' }}>
                     Connect Us
                 </Typography>
 
@@ -22,11 +22,11 @@ const ConnectUs = () => {
 
 
                 <Box component="form" noValidate sx={{ mt: 3 }}>
-                    <Grid container spacing={2}>
+                    <Grid container sx={{ p: 2 }} spacing={2}>
 
-                        <Grid item xs={12}>
+                        <Grid sx={{ mb: 2, backgroundColor: 'white', borderRadius: 1 }} xs={12}>
                             <TextField
-                                sx={{ backgroundColor: "white", borderRadius: 2 }}
+                                variant="filled"
                                 required
                                 fullWidth
                                 id="email"
@@ -35,9 +35,9 @@ const ConnectUs = () => {
                                 autoComplete="email"
                             />
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid sx={{ mb: 2, backgroundColor: 'white', borderRadius: 1 }} xs={12}>
                             <TextField
-                                sx={{ backgroundColor: "white", borderRadius: 2 }}
+                                variant="filled"
                                 required
                                 fullWidth
                                 name="Subject"
@@ -46,35 +46,37 @@ const ConnectUs = () => {
                                 id="Subject"
                             />
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid sx={{ mb: 2 }} xs={12}>
                             <TextareaAutosize
                                 maxRows={4}
                                 aria-label="maximum height"
                                 placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua."
-                                style={{ width: '100%', height: 80, borderRadius: 5 }}
+                                style={{ minWidth: '100%', height: 80, borderRadius: 5 }}
                             />
                         </Grid>
                         <Grid item xs={12}>
-
                             <FormControlLabel
-                                control={<Checkbox value="allowExtraEmails" color="primary" />}
+                                sx={{ color: 'white' }}
+                                control={<Checkbox sx={{
+                                    color: 'white'
+                                }} value="allowExtraEmails"
+                                    defaultChecked color="success" />}
                                 label="I want to receive inspiration, marketing promotions and updates via email."
                             />
 
                         </Grid>
+                        <Grid sx={{ display: 'flex', justifyContent: 'flex-end' }} item xs={12}>
+                            <Button
+                                type="submit"
+                                variant="contained"
+                                sx={{ mb: 2, width: 200, color: 'black', backgroundColor: '#5CE7ED' }}
+                            >
+                                Send
+                            </Button>
+                        </Grid>
+
                     </Grid>
-                    <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        sx={{ mt: 3, mb: 2 }}
-                    >
-                        Send
-                    </Button>
-
-
-
                 </Box>
 
             </Container>
