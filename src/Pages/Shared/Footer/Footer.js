@@ -1,7 +1,7 @@
 import { Avatar, Box, Chip, Container, Divider, Grid, Stack, styled, Typography } from '@mui/material';
 import React from 'react';
-import footerImg from '../../../assets/images/footer.png'
-import logo from '../../../assets/images/doctor-small.png'
+import footerImg from '../../../assets/images/footer.png';
+import logo from '../../../assets/images/doctor-small.png';
 import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,8 +15,7 @@ import './Footer.css';
 
 
 const footerBgStyle = {
-    background: `url(${footerImg})`,
-    backgroundRepeat: 'no-repeat',
+    background: `url(${footerImg})`
 }
 
 const Root = styled('div')(({ theme }) => ({
@@ -107,13 +106,13 @@ const Footer = () => {
                             </Divider>
                         </Root>
 
-                        <Box sx={{ p: 2 }}><NavLink className='text-style' to='/doctors#doctors' color='inherit'>Find a Doctor</NavLink></Box>
+                        <Box sx={{ p: 2 }}><NavLink className='text-style' to='/doctors#doctors' color='inherit'>Emergency Checkup</NavLink></Box>
 
-                        <Box sx={{ p: 2 }}><NavLink className='text-style' to='/services#services' color='inherit'>All services</NavLink></Box>
+                        <Box sx={{ p: 2 }}><NavLink className='text-style' to='/services#services' color='inherit'>Weekly Checkup</NavLink></Box>
 
-                        <Box sx={{ p: 2 }}><NavLink className='text-style' to='/appointment#appointment' color='inherit'>Make An Appointment</NavLink></Box>
+                        <Box sx={{ p: 2 }}><NavLink className='text-style' to='/appointment#appointment' color='inherit'>Monthly Checkup</NavLink></Box>
 
-                        <Box sx={{ p: 2 }}><NavLink className='text-style' to='/register' color='inherit'>Register For Service </NavLink></Box>
+                        <Box sx={{ p: 2 }}><NavLink className='text-style' to='/register' color='inherit'>Deep Checkup</NavLink></Box>
                     </Grid>
 
                     {/* ----------social media part ------------*/}

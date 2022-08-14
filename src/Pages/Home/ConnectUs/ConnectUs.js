@@ -46,13 +46,13 @@ const ConnectUs = () => {
                                 id="Subject"
                             />
                         </Grid>
-                        <Grid sx={{ mb: 2 }} xs={12}>
+                        <Grid sx={{ mb: 2, pe: 1 }} xs={12}>
                             <TextareaAutosize
                                 maxRows={4}
                                 aria-label="maximum height"
                                 placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut labore et dolore magna aliqua."
-                                style={{ minWidth: '100%', height: 80, borderRadius: 5 }}
+                                style={{ width: '100%', height: 80, borderRadius: 5 }}
                             />
                         </Grid>
                         <Grid item xs={12}>
