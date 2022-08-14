@@ -1,11 +1,16 @@
-import { Grid, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { Container, Box } from '@mui/system';
 import clockIcon from '../../../assets/icons/clock.svg'
 import map from '../../../assets/icons/marker.svg'
 import phone from '../../../assets/icons/phone.svg'
 import React from 'react';
 
-
+const boxStyle = {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    maxWidth: 320
+}
 
 const Info = () => {
     return (
@@ -13,11 +18,9 @@ const Info = () => {
             <Container>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     <Box item xs={12} md={3}
-                        sx={{ m: 1, p: 2, borderRadius: 5 }}
+                        sx={{ m: 1, p: 2, borderRadius: 2 }}
                         style={{
-                            display: 'flex',
-                            justifyContent: 'space-evenly',
-                            alignItems: 'center',
+                            ...boxStyle,
                             backgroundColor: "#5CE7ED"
                         }}>
 
@@ -37,11 +40,9 @@ const Info = () => {
                     </Box>
 
                     <Box item xs={12} md={3}
-                        sx={{ m: 1, p: 2, borderRadius: 5 }}
+                        sx={{ m: 1, p: 2, borderRadius: 2 }}
                         style={{
-                            display: 'flex',
-                            justifyContent: 'space-evenly',
-                            alignItems: 'center',
+                            ...boxStyle,
                             backgroundColor: "#3A4256",
                             color: 'white'
                         }}>
@@ -54,17 +55,15 @@ const Info = () => {
                             </Typography>
 
                             <Typography sx={{ fontSize: 15 }} variant='caption'>
-                                22/A Tejgaon Dhaka
+                                22/A Tejgaon, Dhaka
                             </Typography>
                         </Box>
                     </Box>
 
                     <Box item xs={12} md={3}
-                        sx={{ m: 1, p: 2, borderRadius: 5 }}
+                        sx={{ m: 1, p: 2, borderRadius: 2 }}
                         style={{
-                            display: 'flex',
-                            justifyContent: 'space-evenly',
-                            alignItems: 'center',
+                            ...boxStyle,
                             backgroundColor: "#19D3AE"
                         }}>
                         <Box sx={{ mr: 1 }}>
