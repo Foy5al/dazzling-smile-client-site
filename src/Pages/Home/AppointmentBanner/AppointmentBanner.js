@@ -1,7 +1,6 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import React from 'react';
-import doctor from '../../../assets/images/doctor.png';
-import bg from '../../../assets/images/appointment.png';
+import bg from '../../../assets/images/appointBanner.png';
 import { Container } from '@mui/system';
 
 const appointmentBg = {
@@ -17,9 +16,9 @@ const AppointmentBanner = () => {
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
                         <img
-                            style={{ width: 400, marginTop: '-110px' }}
-                            src={doctor}
-                            alt="doctor_image" />
+                            style={{ width: 400, marginTop: '-100px' }}
+                            src='https://www.picktime.com/webassets/2021/img/Online-booking-img.svg'
+                            alt="appointment img" />
                     </Grid>
                     <Grid item xs={12} md={6} sx={{ pb: 2, display: 'flex', alignItems: 'center' }} >
                         <Box>
@@ -27,7 +26,7 @@ const AppointmentBanner = () => {
                                 Appointment
                             </Typography>
 
-                            <Typography sx={{ mt: 3 }} style={{ color: 'white', fontWeight: 600 }} variant='h4'>
+                            <Typography sx={{ color: 'secondary.main', mt: 3 }} style={{ fontWeight: 600 }} variant='h4'>
                                 Make an Appointment <br /> Today
                             </Typography>
 

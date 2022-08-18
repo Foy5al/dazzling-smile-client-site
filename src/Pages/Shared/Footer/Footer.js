@@ -15,7 +15,10 @@ import './Footer.css';
 
 
 const footerBgStyle = {
-    background: `url(${footerImg})`
+    background: `url(${footerImg})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom',
+    height: '100%'
 }
 
 const Root = styled('div')(({ theme }) => ({

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { Container } from '@mui/system';
-import chair from '../../../assets/images/chair.png'
-import bg from '../../../assets/images/bg.png';
+import bg from '../../../assets/svg/wave.svg';
 
 const bannerBg = {
-    background: `url(${bg})`
+    background: `url(${bg})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'bottom'
 }
 
 const verticalCenter = {
@@ -40,7 +41,7 @@ const Banner = () => {
                     </Grid>
 
                     <Grid style={verticalCenter} item xs={12} md={6}>
-                        <img style={{ width: 350 }} src={chair} alt="chair_img" />
+                        <img style={{ width: "100%" }} src='https://www.picktime.com/webassets/2021/img/Video-meeting-integration-img.svg' alt="banner img" />
                     </Grid>
                 </Grid>
             </Container>
