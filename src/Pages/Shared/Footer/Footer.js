@@ -1,6 +1,5 @@
 import { Avatar, Box, Chip, Container, Divider, Grid, Stack, styled, Typography } from '@mui/material';
 import React from 'react';
-import footerImg from '../../../assets/images/footer.png';
 import logo from '../../../assets/images/doctor-small.png';
 import EmailIcon from '@mui/icons-material/Email';
 import CallIcon from '@mui/icons-material/Call';
@@ -11,14 +10,12 @@ import { blue } from '@mui/material/colors';
 import { NavLink } from 'react-router-dom';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './Footer.css';
+import footerImg from '../../../assets/svg/footer.svg';
 
 
 
 const footerBgStyle = {
-    background: `url(${footerImg})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'bottom',
-    height: '100%'
+    background: `url(${footerImg})`
 }
 
 const Root = styled('div')(({ theme }) => ({
@@ -43,7 +40,7 @@ function Copyright(props) {
 
 const Footer = () => {
     return (
-        <Box style={footerBgStyle} className='sticky-container' sx={{ mt: 5, pb: 2, top: 'auto' }}>
+        <Box style={footerBgStyle} className='sticky-container' sx={{ pt: 5, pb: 2, top: 'auto' }}>
             <Container maxWidth="xl">
 
                 <Grid container

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Button, Checkbox, Container, FormControlLabel, Grid, TextareaAutosize, TextField, Typography } from '@mui/material';
-import contactBg from '../../../assets/images/appointment.png'
+import contactBg from '../../../assets/images/contact.png'
 
 
 const appointmentBg = {
-    background: `url(${contactBg})`,
-    marginTop: 155
+    background: `url(${contactBg}) no-repeat center center `,
+    marginTop: 155,
+    backgroundSize: '100% 100%'
 }
 
 const ConnectUs = () => {
@@ -13,10 +14,10 @@ const ConnectUs = () => {
         <Box style={appointmentBg} sx={{ flexGrow: 1 }}>
             <Container>
                 <Typography variant='h6' sx={{ mt: 2, textAlign: 'center', color: '#5CE7ED' }}>
-                    Connect Us
+                    Contact Us
                 </Typography>
 
-                <Typography sx={{ textAlign: 'center', mt: 3 }} style={{ color: 'white', fontWeight: 600 }} variant='h4'>
+                <Typography sx={{ color: 'secondary.main', textAlign: 'center', mt: 3 }} style={{ fontWeight: 600 }} variant='h4'>
                     Stay Connected With Us
                 </Typography>
 

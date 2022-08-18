@@ -1,11 +1,13 @@
 import { Box, Button, Grid, Typography } from '@mui/material';
 import React from 'react';
-import bg from '../../../assets/images/appointBanner.png';
+import bg from '../../../assets/images/appointment.png';
 import { Container } from '@mui/system';
 
 const appointmentBg = {
-    background: `url(${bg})`,
-    marginTop: 155
+    background: `url(${bg}) ,linear-gradient(rgba(228,242,247,0.8),rgba(229,240,240,0.2))`,
+    backgroundSize: '100% 100%',
+    marginTop: 155,
+    backgroundBlendMode: 'overlay'
 }
 
 const AppointmentBanner = () => {
@@ -16,7 +18,7 @@ const AppointmentBanner = () => {
                 <Grid container spacing={2}>
                     <Grid item xs={12} md={6}>
                         <img
-                            style={{ width: 400, marginTop: '-100px' }}
+                            style={{ width: '90%', marginTop: '-100px' }}
                             src='https://www.picktime.com/webassets/2021/img/Online-booking-img.svg'
                             alt="appointment img" />
                     </Grid>

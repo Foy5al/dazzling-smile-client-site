@@ -1,12 +1,10 @@
 import React from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { Container } from '@mui/system';
-import bg from '../../../assets/svg/wave.svg';
+import bg from '../../../assets/images/bg.png';
 
 const bannerBg = {
     background: `url(${bg})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'bottom'
 }
 
 const verticalCenter = {
