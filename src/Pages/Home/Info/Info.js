@@ -14,7 +14,7 @@ const boxStyle = {
 
 const Info = () => {
     return (
-        <Box sx={{ mt: -10, mb: 5 }}>
+        <Box sx={{ mt: -8, mb: 5 }}>
             <Container>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                     <Box item xs={12} md={3}

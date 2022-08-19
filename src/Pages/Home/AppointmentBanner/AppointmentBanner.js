@@ -28,7 +28,7 @@ const AppointmentBanner = () => {
                                 Appointment
                             </Typography>
 
-                            <Typography sx={{ color: 'secondary.main', mt: 3 }} style={{ fontWeight: 600 }} variant='h4'>
+                            <Typography sx={{ mt: 3 }} style={{ fontWeight: 600 }} variant='h4'>
                                 Make an Appointment <br /> Today
                             </Typography>
 

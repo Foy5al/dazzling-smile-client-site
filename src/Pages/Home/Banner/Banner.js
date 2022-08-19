@@ -10,7 +10,7 @@ const bannerBg = {
 const verticalCenter = {
     display: 'flex',
     alignItems: 'center',
-    height: 550,
+    height: 450,
     justifyItems: 'center'
 
 }
@@ -39,7 +39,7 @@ const Banner = () => {
                     </Grid>
 
                     <Grid style={verticalCenter} item xs={12} md={6}>
-                        <img style={{ width: "100%" }} src='https://www.picktime.com/webassets/2021/img/Video-meeting-integration-img.svg' alt="banner img" />
+                        <img style={{ paddingLeft: 10, width: "90%" }} src='https://www.picktime.com/webassets/2021/img/Video-meeting-integration-img.svg' alt="banner img" />
                     </Grid>
                 </Grid>
             </Container>
