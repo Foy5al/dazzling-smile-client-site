@@ -19,7 +19,7 @@ const AppointmentBanner = () => {
                     <Grid item xs={12} md={6}>
                         <img
                             style={{ width: '90%', marginTop: '-100px' }}
-                            src='https://www.picktime.com/webassets/2021/img/Online-booking-img.svg'
+                            src='https://www.picktime.com/webassets/2021/img/reminders.svg'
                             alt="appointment img" />
                     </Grid>
                     <Grid item xs={12} md={6} sx={{ pb: 2, display: 'flex', alignItems: 'center' }} >
